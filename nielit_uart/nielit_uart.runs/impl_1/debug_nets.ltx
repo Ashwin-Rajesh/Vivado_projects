@@ -1,0 +1,378 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "100000000"
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "virtual_io",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "5BF413E150E35149AA2620032496AE80",
+                        "pins": [
+                            {
+                                "name": "probe_in0",
+                                "id": 0,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "led_rx_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in1",
+                                "id": 1,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "led_tx_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in2",
+                                "id": 2,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "led_full_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in3",
+                                "id": 3,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "led_mid_OBUF_1",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in4",
+                                "id": 4,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "led_mid_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out0",
+                                "id": 5,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "sw_ping",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "your_instance_name",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "C43761E0C03650398C6907A263A83E64",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "uart_rx_IBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "uart_tx_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "fifo_din",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "fifo_din[7]"
+                                            },
+                                            {
+                                                "name": "fifo_din[6]"
+                                            },
+                                            {
+                                                "name": "fifo_din[5]"
+                                            },
+                                            {
+                                                "name": "fifo_din[4]"
+                                            },
+                                            {
+                                                "name": "fifo_din[3]"
+                                            },
+                                            {
+                                                "name": "fifo_din[2]"
+                                            },
+                                            {
+                                                "name": "fifo_din[1]"
+                                            },
+                                            {
+                                                "name": "fifo_din[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "fifo_dout",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "fifo_dout[7]"
+                                            },
+                                            {
+                                                "name": "fifo_dout[6]"
+                                            },
+                                            {
+                                                "name": "fifo_dout[5]"
+                                            },
+                                            {
+                                                "name": "fifo_dout[4]"
+                                            },
+                                            {
+                                                "name": "fifo_dout[3]"
+                                            },
+                                            {
+                                                "name": "fifo_dout[2]"
+                                            },
+                                            {
+                                                "name": "fifo_dout[1]"
+                                            },
+                                            {
+                                                "name": "fifo_dout[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 5,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "fifo_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "fifo_cnt[5]"
+                                            },
+                                            {
+                                                "name": "fifo_cnt[4]"
+                                            },
+                                            {
+                                                "name": "fifo_cnt[3]"
+                                            },
+                                            {
+                                                "name": "fifo_cnt[2]"
+                                            },
+                                            {
+                                                "name": "fifo_cnt[1]"
+                                            },
+                                            {
+                                                "name": "fifo_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "state",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "state[1]",
+                                                "parentNetId": 29
+                                            },
+                                            {
+                                                "name": "state[0]",
+                                                "parentNetId": 30
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 29,
+                        "name": "state[1]",
+                        "state_reg": [
+                            {
+                                "name": "state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "s_IDLE",
+                                        "val": "00"
+                                    },
+                                    {
+                                        "name": "s_READ1",
+                                        "val": "01"
+                                    },
+                                    {
+                                        "name": "s_READ2",
+                                        "val": "10"
+                                    },
+                                    {
+                                        "name": "s_SEND",
+                                        "val": "11"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 30,
+                        "name": "state[0]",
+                        "state_reg": [
+                            {
+                                "name": "state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "s_IDLE",
+                                        "val": "00"
+                                    },
+                                    {
+                                        "name": "s_READ1",
+                                        "val": "01"
+                                    },
+                                    {
+                                        "name": "s_READ2",
+                                        "val": "10"
+                                    },
+                                    {
+                                        "name": "s_SEND",
+                                        "val": "11"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
